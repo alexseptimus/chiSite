@@ -1,8 +1,9 @@
 <html>
     <head>
-        <title>Web site</title>
+        <title>Yvon site</title>
         <link rel="icon" href="favicon.ico">
         <link rel="stylesheet" href="layout/design.css" >
+        <link rel="stylesheet" href="layout/pages.css" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
@@ -11,20 +12,64 @@
                 <ul>
                     <li id="menu" onclick="displaymenu()"><a href="#stocaz"  >Menu</a></li>
                     <div class="dropdown" id="drop">
-                    <li><a href="#home" class="option active" >Home</a></li>
-                    <li><a href="#blog" class="option" >Blog</a></li>
-                    <li><a href="https://www.patreon.com/join/chenyvon?" target="_blank" class="option"  >Become a Patreon</a></li>
-                    <li><a href="#aboutme" class="option" >About Me</a></li>
+                    <li onclick="switchcontent(event)" ><a href="#home" class="option active" name="home">Home</a></li>
+                    <li onclick="switchcontent(event)" ><a href="#blog" class="option" name="blog" >Blog</a></li>
+                    <li onclick="switchcontent(event)" ><a href="https://www.patreon.com/join/chenyvon?" name="patreon" target="_blank" class="option"  >Become a Patreon</a></li>
+                    <li onclick="switchcontent(event)" ><a href="#aboutme" class="option" name="aboutme">About Me</a></li>
                     </div>
                 </ul>
             </div>
             <div class="content">
-                <div id="drawing">
-
+                <!--------------     HOME    --------------->
+                <div class="sector activePage" name="home" >
+                    <p>suck my D....K</p>
+                </div>
+                <!--------------     ABOUT ME    --------------->
+                <div class="sector" name="aboutme">
+                        <div>
+                            <h1>About Me</h1>
+                            Hello everyone, my name is Yvon.<br>
+                            I'm an Amateur Artist, my art follows the trends and love for Oriental Style Art.<br>
+                            Moreover i try to fuse together the characteristics of a Contemporary Minimal Art with an Oriental Style Art in my drawings, <br>
+                            in fact in each of these you can find a message about existence on earth that doesn't show up at the first look.<br>
+                            That's why i pay a particular attention to details on the very few things i draw, giving them strong and deep meanings.<br>
+                        </div>
+                            <h2>Contacts</h2>
+                            <em>Wanna contact me for commissions?</em><br>
+                            <ul>
+                                <li><em>Email : </em> <a href="mailto:carolineivonne5@gmail.com?&subject=mail from Patreon">
+                                    <input type="button" class="socialbtn" value="Send Me an Email"/>
+                                    </a>
+                                </li><br>
+                                <li><em>Instagram : </em> <a href="https://www.instagram.com/chen.yvon/" target="_blank">
+                                        <input type="button" class="socialbtn" value="Follow me in instagram"/> 
+                                        
+                                </a>
+                                </li>
+                                <br>
+                                <li>
+                                        <a href="https://www.instagram.com/chen.yvon/" target="_blank">
+                                        <img src="asset/instagram.jpg" class="socialimg" alt="404 img not found"/></a>
+                                </li>
+                            </ul>
+                </div>
+                <!--------------     Patreon    --------------->
+                <div class="sector" name="patreon" >
+                    <p>Thanks for your ass</p>
+                </div>
+                <!--------------     BLOG    --------------->
+                <div class="sector" name="blog">
+                    <p>blog</p>
                 </div>
             </div>
+
         </div>
+
+
+
+
+
     </body>
 </html>
-<script type="text/javascript" src="script/Header.js">
-</script>
+<script type="text/javascript" src="script/Header.js"></script>
+<script type="text/javascript" src="script/pages.js"></script>
