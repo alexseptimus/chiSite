@@ -10,7 +10,7 @@
         <div id="page">
             <div class="header" >
                 <ul>
-                    <li id="menu" onclick="displaymenu()"><a href="#stocaz"  >Menu</a></li>
+                    <li id="menu" onclick="displaymenu()"><a href="#menubtn"  >Menu</a></li>
                     <div class="dropdown" id="drop">
                     <li onclick="switchcontent(event)" ><a href="#home" class="option active" name="home">Home</a></li>
                     <li onclick="switchcontent(event)" ><a href="#blog" class="option" name="blog" >Blog</a></li>
@@ -28,31 +28,51 @@
                 <div class="sector" name="aboutme">
                         <div>
                             <h1>About Me</h1>
-                            Hello everyone, my name is Yvon.<br>
+                            Hello everyone, my name is <b>Yvon</b>.<br>
                             I'm an Amateur Artist, my art follows the trends and love for Oriental Style Art.<br>
                             Moreover i try to fuse together the characteristics of a Contemporary Minimal Art with an Oriental Style Art in my drawings, <br>
                             in fact in each of these you can find a message about existence on earth that doesn't show up at the first look.<br>
                             That's why i pay a particular attention to details on the very few things i draw, giving them strong and deep meanings.<br>
                         </div>
-                            <h2>Contacts</h2>
-                            <em>Wanna contact me for commissions?</em><br>
-                            <ul>
-                                <li><em>Email : </em> <a href="mailto:carolineivonne5@gmail.com?&subject=mail from Patreon">
+                        <h2>Contacts</h2>
+                        <em>Wanna contact me for commissions?</em><br>
+                        <div id="desktop">
+                            
+                            <ul class="soc">
+                                <li ><em>Email : </em> <a href="mailto:carolineivonne5@gmail.com?&subject=mail from Patreon">
                                     <input type="button" class="socialbtn" value="Send Me an Email"/>
                                     </a>
                                 </li><br>
                                 <li><em>Instagram : </em> <a href="https://www.instagram.com/chen.yvon/" target="_blank">
                                         <input type="button" class="socialbtn" value="Follow me in instagram"/> 
-                                        
                                 </a>
-                                </li>
-                                <br>
-                                <li>
+                                </li><br>
+                                <li class="soc">
                                         <a href="https://www.instagram.com/chen.yvon/" target="_blank">
                                         <img src="asset/instagram.jpg" class="socialimg" alt="404 img not found"/></a>
                                 </li>
                             </ul>
+                        </div>
+                        <div id="mobile">
+                                <h2>Contacts</h2>
+                                <em>Wanna contact me for commissions?</em><br>
+                                <ul class="soc">
+                                    <li ><a href="mailto:carolineivonne5@gmail.com?&subject=mail from Patreon">
+                                        <input type="button" class="socialbtn" value="Send Me an Email"/>
+                                        </a>
+                                    </li><br>
+                                    <li><a href="https://www.instagram.com/chen.yvon/" target="_blank">
+                                            <input type="button" class="socialbtn" value="Follow me in instagram"/> 
+                                    </a>
+                                    </li><br>
+                                    <li class="soc">
+                                            <a href="https://www.instagram.com/chen.yvon/" target="_blank">
+                                            <img src="asset/instagram.jpg" class="socialimg" alt="404 img not found"/></a>
+                                    </li>
+                                </ul>
+                            </div>
                 </div>
+
                 <!--------------     Patreon    --------------->
                 <div class="sector" name="patreon" >
                     <p>Thanks for your ass</p>

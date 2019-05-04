@@ -8,7 +8,11 @@
 /*         ABOUT ME           */
 .sector{
     display: none;
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 3%;
 }
+
 .activePage{
     display: block !important; 
 }
@@ -19,11 +23,18 @@
     border-style: none;
     border-radius: 25px;
     width: 25%;
+    padding: 5px;
     color: white;
     background-color: #333;
     cursor:pointer;
     text-align: center;
     position: relative;
+}
+ul.soc{
+    list-style-type: initial;
+}
+li.soc{
+    list-style-type: none;
 }
 .socialbtn:hover{
     background-color: rgb(119, 119, 119);
@@ -34,4 +45,37 @@
 .socialimg{
     position:absolute;
     margin-left: 5px;
+}
+#mobile{
+    display: none;
+}
+#desktop{
+    display: block;
+}
+@media only screen and (max-width: 600px){
+    #mobile{
+        display: block;
+    }
+    #desktop{
+        display: none;
+    }
+    ul.soc{
+        list-style-type: none;
+    }
+    .socialbtn{
+        border-style: none;
+        border-radius: 0px;
+        width: 100%;
+        padding: 10px;
+        color: white;
+        background-color: #333;
+        text-align: center;
+        position: relative;
+    }
+    .sector{
+        display: none;
+        text-align: center;
+        margin-left: 5%;
+        margin-top: 3%;
+    }
 }
