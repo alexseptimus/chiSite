@@ -7,17 +7,19 @@
 
 /*         ABOUT ME           */
 .sector{
+
     display: none;
     text-align: justify;
     margin-left: 5%;
     margin-top: 3%;
+    
 }
 
 .activePage{
     display: block !important; 
 }
 .content{
-
+   
 }
 .socialbtn{
     border-style: none;
@@ -32,7 +34,9 @@
 }
 ul.soc{
     list-style-type: initial;
+    white-space: nowrap;
 }
+
 li.soc{
     list-style-type: none;
 }
@@ -45,6 +49,7 @@ li.soc{
 .socialimg{
     position:absolute;
     margin-left: 0px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 #mobile{
@@ -52,6 +57,10 @@ li.soc{
 }
 #desktop{
     display: block;
+    
+}
+.mobiletesto{
+
 }
 @media only screen and (max-width: 600px){
     #mobile{
@@ -63,23 +72,29 @@ li.soc{
     ul.soc{
         list-style-type: none;
         margin-left: 0;
-        position:relative;
+        white-space: nowrap;
     }
     .socialbtn{
-        border-style: none;
+    
         border-radius: 0px;
-        width: 100%;
+        width: 90%;
+        margin-top: 10px;
         padding: 5%;
         font-size: 110%;
-        color: white;
-        background-color: #333;
-        text-align: center;
-        position: relative;
+        position: -ms-page;
+        overflow: hidden;
+        left:0;
     }
     .sector{
         display: none;
-        text-align: center;
+        text-align:justify;
         margin-left: 0%;
         margin-top: 1%;
+      
+    }
+    .mobiletesto , h1{
+        margin-left: 5%;
+        margin-right:5%;
+        text-align:center;
     }
 }
