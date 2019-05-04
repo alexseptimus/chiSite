@@ -9,6 +9,7 @@ function displaymenu(){
     }
 }
 function unresizable(){
+    alert(getResolutionX() + " "+screen.width);
     return (getResolutionX() <= screen.width) ? true : false;
 }
 function getResolutionX(){
