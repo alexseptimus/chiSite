@@ -22,11 +22,72 @@
             <div class="content">
                 <!--------------     HOME    --------------->
                 <div class="sector activePage" name="home" >
-                    <p>Gallery</p>
+                    <h1>Gallery</h1>
+                       
+                        <div id="galleryContainer" class="gallery-container">
+                            <div class="galleryborder">
+                            <div class="photos fadePhotos ">
+                              <img src="asset/Gallery/photo1.jpg" class="resolutionphoto" >
+                              <div class="photoTitle">Caption Text</div>
+                            </div>
+                            
+                            <div class="photos fadePhotos ">
+                                <img src="asset/Gallery/photo2.jpg" class="resolutionphoto" >
+                                <div class="photoTitle">Caption two</div>
+                            </div>
+                            <div class="photos fadePhotos ">
+                              <img src="asset/Gallery/photo3.jpg" class="resolutionphoto" >
+                              <div class="photoTitle">Caption Three</div>
+                            </div>
+
+                            <div class="photos fadePhotos ">
+                                <img src="asset/Gallery/photo4.jpg" class="resolutionphoto" >
+                                <div class="photoTitle">Caption four</div>
+                            </div>
+                            <div class="photos fadePhotos ">
+                                <img src="asset/Gallery/photo5.jpg" class="resolutionphoto" >
+                                <div class="photoTitle">Caption five</div>
+                            </div>
+                            <a class="prevGallerybtn" id="prevGallerybtn"onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="nextGallerybtn" id="nextGallerybtn" onclick="plusSlides(1)">&#10095;</a>
+                        </div><br><br>
+                            <div style="text-align:center" id="indicators">
+                                <span class="indicatorPhotos" onclick="currentSlide(1)"></span> 
+                                <span class="indicatorPhotos" onclick="currentSlide(2)"></span> 
+                                <span class="indicatorPhotos" onclick="currentSlide(3)"></span> 
+                                <span class="indicatorPhotos" onclick="currentSlide(4)"></span> 
+                                <span class="indicatorPhotos" onclick="currentSlide(5)"></span> 
+                            </div>
+                        </div>
+                        
+
+                    <div class="desktop">
+                        <a class="supportPaypal" href="https://paypal.me/AyamIrit?locale.x=it_IT" target="_blank">
+                            <p>Please support a little girl :C</p>
+                            <img id="paypal" onmouseover="hover(this)" onclick="hover(this)" onmouseout="unhover(this)" title="Help a lil girl" src="asset/paypal.jpg">
+                            <br><br>
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                <input type="hidden" name="cmd" value="_s-xclick" />
+                                <input type="hidden" name="hosted_button_id" value="MG9HPGVL4JHZU" />
+                                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" width="120" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
+                            </form>
+                        </a>
+                    </div>
+                    <div class="mobile">
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                                    <input type="hidden" name="cmd" value="_s-xclick" />
+                                    <input type="hidden" name="hosted_button_id" value="MG9HPGVL4JHZU" />
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" width="120" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                    <img alt="" border="0" src="https://www.paypal.com/en_IT/i/scr/pixel.gif" width="1" height="1" />
+                                </form>
+                            
+                        </div>
                 </div>
                 <!--------------     ABOUT ME    --------------->
                 <div class="sector" name="aboutme">
-                        <div>
+                        <div class="textAboutme">
+                            <img class="artistphoto" src="asset/artist.jpg" alt="The Artist is shy :D" >
                             <h1>About Me</h1>
                             <p class="mobiletesto">Hello everyone, my name is <b>Yvon</b>.<br>
                             I'm an Amateur Artist, my art follows the trends and love for Oriental Style Art.<br>
@@ -37,7 +98,7 @@
                         </div><br><br>
                         <h2>Contacts</h2>
                         <p class="mobiletesto" ><em>Wanna contact me for commissions?</em><br></p>
-                        <div id="desktop">
+                        <div class="desktop">
                             
                             <ul class="soc">
                                 <li><em>Email : </em> <a href="mailto:carolineivonne5@gmail.com?&subject=mail from Patreon">
@@ -54,7 +115,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div id="mobile">
+                        <div class="mobile">
                             
                                     <a href="mailto:carolineivonne5@gmail.com?&subject=mail from Patreon">
                                         <input type="button" class="socialbtn" value="Send Me an Email"/>
@@ -80,12 +141,7 @@
                     <p>blog</p>
                 </div>
             </div>
-
         </div>
-
-
-
-
 
     </body>
 </html>
